@@ -1,0 +1,36 @@
+{
+    "abilityName":"a1",
+    "iconPath":"Textures/Tx_Dog_a1",
+    "useOwnerRange":false,
+    "rangeCell":2,
+    "rangeType":0,
+    "abilityEvents":
+    [
+        {
+            "__ASSEMBLY__":"Assembly-CSharp, Version=0.17.0.0, Culture=neutral, PublicKeyToken=null",
+            "__TYPE__":"MySrpg.AbilityEventConfig_PlayAnim",
+            "timePoint":0.0,
+            "animKey":"a1"
+        },
+        {
+            "__ASSEMBLY__":"Assembly-CSharp, Version=0.17.0.0, Culture=neutral, PublicKeyToken=null",
+            "__TYPE__":"MySrpg.AbilityEventConfig_StealDamage",
+            "timePoint":0.35,
+            "baseDamage":8
+        },
+        {
+            "__ASSEMBLY__":"Assembly-CSharp, Version=0.17.0.0, Culture=neutral, PublicKeyToken=null",
+            "__TYPE__":"MySrpg.AbilityEventConfig_AddBuff",
+            "timePoint":0.35,
+            "prototype":
+            {
+                "__ASSEMBLY__":"Assembly-CSharp, Version=0.17.0.0, Culture=neutral, PublicKeyToken=null",
+                "__TYPE__":"MySrpg.BuffConfig_ModifyProperty",
+                "name":"b1",
+                "maxDuration":1,
+                "property":1,
+                "valueToAdd":-5.0
+            }
+        }
+    ]
+}

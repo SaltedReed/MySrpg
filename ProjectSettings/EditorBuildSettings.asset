@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MySrpg/Scenes/Main.unity
+    guid: 2d9b62f063085f743aa4104723251537
+  - enabled: 1
+    path: Assets/MySrpg/Scenes/Loading.unity
+    guid: 399fbeee47d283241b353134e3b89435
+  - enabled: 1
+    path: Assets/MySrpg/Scenes/PvE.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/MySrpg/Scenes/MatchRoom.unity
+    guid: 0a49d944d65c9a342ba50f1255cc6606
+  - enabled: 1
+    path: Assets/MySrpg/Scenes/PvP.unity
+    guid: 87dd750d803d52f4eb384e3ad0ada168
+  m_configObjects: {}

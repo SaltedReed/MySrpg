@@ -1,0 +1,36 @@
+{
+    "abilityName":"a1",
+    "iconPath":"Textures/Tx_Erika_a1",
+    "useOwnerRange":false,
+    "rangeCell":4,
+    "rangeType":0,
+    "abilityEvents":
+    [
+        {
+            "__ASSEMBLY__":"Assembly-CSharp, Version=0.17.0.0, Culture=neutral, PublicKeyToken=null",
+            "__TYPE__":"MySrpg.AbilityEventConfig_PlayAnim",
+            "timePoint":0.0,
+            "animKey":"a1"
+        },
+        {
+            "__ASSEMBLY__":"Assembly-CSharp, Version=0.17.0.0, Culture=neutral, PublicKeyToken=null",
+            "__TYPE__":"MySrpg.AbilityEventConfig_StealDamage",
+            "timePoint":0.5,
+            "baseDamage":12
+        },
+        {
+            "__ASSEMBLY__":"Assembly-CSharp, Version=0.17.0.0, Culture=neutral, PublicKeyToken=null",
+            "__TYPE__":"MySrpg.AbilityEventConfig_AddBuff",
+            "timePoint":0.5,
+            "prototype":
+            {
+                "__ASSEMBLY__":"Assembly-CSharp, Version=0.17.0.0, Culture=neutral, PublicKeyToken=null",
+                "__TYPE__":"MySrpg.BuffConfig_ModifyProperty",
+                "name":"b2",
+                "maxDuration":2,
+                "property":1,
+                "valueToAdd":-3.0
+            }
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf5f969f960bef8449fee2204a37e5a3, type: 3}
+  m_Name: Proj_BlueQuad
+  m_EditorClassIdentifier: 
+  type: 0
+  instanced: 1
+  forceForward: 0
+  priority: 0
+  transparencyType: 1
+  cutoff: 0.01
+  tiling: {x: 0, y: 0}
+  offset: {x: 0, y: 0}
+  maskMethod: 0
+  masks: 00000000
+  projectionLimit: 180
+  _Cutoff: 124
+  _TilingOffset: 402
+  _MaskBase: 400
+  _MaskLayers: 401
+  albedo:
+    texture: {fileID: 0}
+    color: {r: 0, g: 0.56078434, b: 1, a: 1}
+    _MainTex: 4
+    _Color: 16
+  metallic:
+    texture: {fileID: 0}
+    metallicity: 0
+    glossiness: 0
+    _MetallicGlossMap: 263
+    _Metallic: 262
+    _Glossiness: 259
+  normal:
+    texture: {fileID: 0}
+    strength: 1
+    _BumpMap: 171
+    _BumpScale: 269
+  emissive:
+    texture: {fileID: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    intensity: 1
+    _EmissionMap: 283
+    _EmissionColor: 96

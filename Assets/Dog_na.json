@@ -1,0 +1,27 @@
+{
+    "abilityName":"na",
+    "iconPath":"Textures/Tx_Dog_na",
+    "timeLength":0.833,
+    "useOwnerRange":true,
+    "abilityEvents":
+    [
+        {
+            "__ASSEMBLY__":"Assembly-CSharp, Version=0.17.0.0, Culture=neutral, PublicKeyToken=null",
+            "__TYPE__":"MySrpg.AbilityEventConfig_PlayAnim",
+            "timePoint":0.0,
+            "animKey":"na"
+        },
+        {
+            "__ASSEMBLY__":"Assembly-CSharp, Version=0.17.0.0, Culture=neutral, PublicKeyToken=null",
+            "__TYPE__":"MySrpg.AbilityEventConfig_SpawnVfx",
+            "timePoint":0.35,
+            "path":"Prefabs/Vfx/Vfx_Dog_NA"
+        },
+        {
+            "__ASSEMBLY__":"Assembly-CSharp, Version=0.17.0.0, Culture=neutral, PublicKeyToken=null",
+            "__TYPE__":"MySrpg.AbilityEventConfig_StealDamage",
+            "timePoint":0.35,
+            "useOwnerAttackment":true
+        }
+    ]
+}
