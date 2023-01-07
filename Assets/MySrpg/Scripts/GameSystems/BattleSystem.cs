@@ -27,14 +27,16 @@ namespace MySrpg
         public Player player0 { get; private set; }
         public List<Character> characters0 => m_characters0;
         private List<Character> m_characters0 = new List<Character>();
-        public int count0 => m_characters0.FindAll(IsAlive).Count;
+        public List<Character> aliveCharacters0 => m_characters0.FindAll(IsAlive);
+        //public int count0 => m_characters0.FindAll(IsAlive).Count;
 
         public Player player1 { get; private set; }
         public List<Character> characters1 => m_characters1;
         private List<Character> m_characters1 = new List<Character>();
-        public int count1 => m_characters1.FindAll(IsAlive).Count;
+        public List<Character> aliveCharacters1 => m_characters1.FindAll(IsAlive);
+        //public int count1 => m_characters1.FindAll(IsAlive).Count;
 
-        public bool isAnySideAllDead => count0 == 0 || count1 == 0;
+        public bool isAnySideAllDead => aliveCharacters0.Count == 0 || aliveCharacters1.Count == 0;
 
         public event OnCharacterSpawnHandler onCharacterSpawnHandler;
         public event OnOneSideAllDeadHandler onOneSideAllDeadHandler;
@@ -118,9 +120,9 @@ namespace MySrpg
             {
                 if (newVal <= 0.0f)
                 {
-                    if (count0 == 0)
+                    if (aliveCharacters0.Count == 0)
                         onOneSideAllDeadHandler?.Invoke(0);
-                    else if (count1 == 0)
+                    else if (aliveCharacters1.Count == 0)
                         onOneSideAllDeadHandler?.Invoke(1);
                 }
             };

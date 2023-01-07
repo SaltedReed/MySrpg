@@ -52,7 +52,7 @@ namespace MySrpg.UI
 
         private void Start()
         {
-            m_iconSlotPrefab = ResourceManager.Load<GameObject>("Prefabs/UI/General/IconSlot");
+            m_iconSlotPrefab = ResourceManager.Load<GameObject>("GeneralUI", "IconSlot");
         }
 
         private void OnDisable()

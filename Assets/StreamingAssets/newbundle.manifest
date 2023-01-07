@@ -1,0 +1,75 @@
+ManifestFileVersion: 0
+CRC: 1535043846
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 891c3eb3d736f505906b732fc7574f9b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e08bc0adb927fe89b04232d126697169
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: fd385e6703c505b4cafe1f0e4287e53b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 319
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: MySrpg.LinearFloat
+Assets:
+- Assets/MySrpg/Anim/Erika/Materials/Bow_DIFF.mat
+- Assets/MySrpg/Anim/Erika/Materials/Arrow_DIFF.mat
+- Assets/MySrpg/Anim/Erika/AM_Erika.mask
+- Assets/MySrpg/Resources/Prefabs/DisplayModels/ErikaModel.prefab
+- Assets/MySrpg/Resources/Textures/Tx_CErika.png
+- Assets/MySrpg/Anim/Erika/Materials/FemaleFitA_Body_diffuse.mat
+- Assets/MySrpg/Anim/Erika/Erika.fbm/Arrow_NM.jpg
+- Assets/MySrpg/Anim/Erika/Standing React Small From Front 02.fbx
+- Assets/MySrpg/Anim/Erika/Erika.fbm/Bow_NM.jpg
+- Assets/MySrpg/Anim/Erika/Standing Aim Recoil.fbx
+- Assets/MySrpg/Anim/Erika/AC_ErikaModel.controller
+- Assets/_Test/Erika_Archer_Bow_Mesh.prefab
+- Assets/MySrpg/Anim/Erika/Materials/Erika_Archer_Clothes_diffuse.mat
+- Assets/MySrpg/Anim/Erika/Erika.fbm/FemaleFitA_StdNM.png
+- Assets/MySrpg/Anim/Erika/Erika.fbm/Erika_Archer_Clothes_normal.png
+- Assets/MySrpg/Anim/Erika/Erika.fbm/Bow_DIFF.jpg
+- Assets/MySrpg/Anim/Erika/Standing Idle 01.fbx
+- Assets/MySrpg/Anim/Erika/Erika.fbm/FemaleFitA_Body_diffuse.png
+- Assets/MySrpg/Anim/Erika/Erika.fbm/Arrow_DIFF.png
+- Assets/MySrpg/Anim/Erika/Standing Sprint Forward.fbx
+- Assets/MySrpg/Anim/Erika/Erika.fbx
+- Assets/MySrpg/Anim/Erika/Erika.fbm/Erika_Archer_Clothes_diffuse.png
+- Assets/_Test/Test_Erika.asset
+- Assets/MySrpg/Anim/Erika/AC_Erika.controller
+Dependencies:
+- E:/workspace-unity/MySrpg/MySrpg/AssetBundles/StandaloneWindows/player_erika

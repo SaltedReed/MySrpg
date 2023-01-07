@@ -40,7 +40,7 @@ namespace MySrpg
 
         protected void OpenMainPage()
         {
-            MainPage mainPage = m_uiManager.Create<MainPage>("MainPage", "Prefabs/UI/MainPage");
+            MainPage mainPage = m_uiManager.Create<MainPage>("MainPage", "MainPageUI", "MainPage");
             m_uiManager.Push(mainPage);
         }
                 

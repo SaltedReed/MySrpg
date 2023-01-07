@@ -41,7 +41,7 @@ namespace MySrpg
             m_uiManager = UIManager.Instance;
             m_uiManager.uiRoot = uiRoot;
 
-            BattleUI battleUI = m_uiManager.Create<BattleUI>("BattleUI", "Prefabs/UI/Battle/BattleUI", true, this);
+            BattleUI battleUI = m_uiManager.Create<BattleUI>("BattleUI", "BattleUI", "BattleUI", true, this);
             m_uiManager.Open(battleUI, m_battleSystem);
         }
 
@@ -50,7 +50,7 @@ namespace MySrpg
             bool won = affiliation != m_battleSystem.player0.playerAffiliation;
             (Game.Instance as SrpgGame).onBattleFinishHandler?.Invoke(won, 0);
 
-            m_uiManager.Create<BattleResult>("BattleResult", "Prefabs/UI/Battle/BattleResult", false);
+            m_uiManager.Create<BattleResult>("BattleResult", "BattleUI", "BattleResult", false);
 
             float delay = 1.0f;
             if (!won)

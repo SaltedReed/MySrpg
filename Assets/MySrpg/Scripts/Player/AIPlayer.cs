@@ -19,14 +19,30 @@ namespace MySrpg
 
         private void SelectNextCharacter()
         {
-            if (m_curSelectIndex == m_battleSys.count1 - 1)
+            m_curSelectIndex = GetNextSelectIndex(m_curSelectIndex);
+
+            if (m_curSelectIndex < 0)
             {
                 lvlManager.StartNextRound();
             }
             else
             {
-                DecideAbility(m_battleSys.characters1[++m_curSelectIndex]);
+                DecideAbility(m_battleSys.characters1[m_curSelectIndex]);
             }
+        }
+
+        private int GetNextSelectIndex(int curIndex)
+        {
+            List<Character> potentials = m_battleSys.aliveCharacters1;
+            for (int i = 0; i < potentials.Count; ++i)
+            {
+                if (potentials[i].index > curIndex)
+                {
+                    return potentials[i].index;
+                }
+            }
+
+            return -1;
         }
 
         private void OnCharacterFinishAbility(Character c, Ability a)

@@ -17,11 +17,11 @@ namespace MySrpg
         public float attackableCellInc = 0.0f;
         public float abilityRangeCellInc = 0.0f;
 
-        protected readonly string m_normalCellPrefabPath = "Prefabs/Indicator/EmptyQuad";
-        protected readonly string m_selectionCellPrefabPath = "Prefabs/Indicator/GreyQuadProj";
-        protected readonly string m_movableCellPrefabPath = "Prefabs/Indicator/BlueQuadProj";
-        protected readonly string m_attackableCellPrefabPath = "Prefabs/Indicator/RedQuadProj";
-        protected readonly string m_abilityRangeCellPrefabPath = "Prefabs/Indicator/YellowQuadProj";
+        protected readonly string m_normalCellPrefabPath = "EmptyQuad";
+        protected readonly string m_selectionCellPrefabPath = "GreyQuadProj";
+        protected readonly string m_movableCellPrefabPath = "BlueQuadProj";
+        protected readonly string m_attackableCellPrefabPath = "RedQuadProj";
+        protected readonly string m_abilityRangeCellPrefabPath = "YellowQuadProj";
 
         protected Transform m_root;
 
@@ -38,7 +38,7 @@ namespace MySrpg
             if (m_abilityRangeCells != null && m_abilityRangeCells.Length > 0)
                 HideAbilityRangeCells();
 
-            GameObject prefab = ResourceManager.Load<GameObject>(m_abilityRangeCellPrefabPath);
+            GameObject prefab = ResourceManager.Load<GameObject>("Indicator", m_abilityRangeCellPrefabPath);
             if (prefab is null)
             {
                 Debug.LogError($"failed to load the ability range cell prefab from {m_abilityRangeCellPrefabPath}");
@@ -80,7 +80,7 @@ namespace MySrpg
             if (m_attackableCells != null && m_attackableCells.Length > 0)
                 HideAttackableCells();
 
-            GameObject prefab = ResourceManager.Load<GameObject>(m_attackableCellPrefabPath);
+            GameObject prefab = ResourceManager.Load<GameObject>("Indicator", m_attackableCellPrefabPath);
             if (prefab is null)
             {
                 Debug.LogError($"failed to load the attackable cell prefab from {m_attackableCellPrefabPath}");
@@ -115,7 +115,7 @@ namespace MySrpg
             if (m_movableCells != null && m_movableCells.Length > 0)
                 HideMovableCells();
 
-            GameObject prefab = ResourceManager.Load<GameObject>(m_movableCellPrefabPath);
+            GameObject prefab = ResourceManager.Load<GameObject>("Indicator", m_movableCellPrefabPath);
             if (prefab is null)
             {
                 Debug.LogError($"failed to load the movable cell prefab from {m_movableCellPrefabPath}");
@@ -166,7 +166,7 @@ namespace MySrpg
             GameObject rootGo = new GameObject("Indicators");
             m_root = rootGo.transform;
 
-            GameObject selectionCellPrefab = ResourceManager.Load<GameObject>(m_selectionCellPrefabPath);
+            GameObject selectionCellPrefab = ResourceManager.Load<GameObject>("Indicator", m_selectionCellPrefabPath);
             if (selectionCellPrefab != null)
             {
                 m_selectionCell = Instantiate(selectionCellPrefab);
@@ -185,7 +185,7 @@ namespace MySrpg
 
             m_map = AstarPath.active.graphs[0] as GridGraph;
 
-            GameObject normalCellPrefab = ResourceManager.Load<GameObject>(m_normalCellPrefabPath);
+            GameObject normalCellPrefab = ResourceManager.Load<GameObject>("Indicator", m_normalCellPrefabPath);
             if (normalCellPrefab != null)
             {
                 m_normalCells = new GameObject[m_map.CountNodes()];

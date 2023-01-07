@@ -24,12 +24,12 @@ namespace MySrpg.UI
         {
             base.OnCreate(uiMngr, args);
 
-            m_abilityPanel = uiManager.Create<AbilityPanel>("AbilityPanel", "Prefabs/UI/Battle/AbilityPanel");
-            m_characterPanel = uiManager.Create<CharacterPanel>("CharacterPanel", "Prefabs/UI/Battle/CharacterPanel");
-            m_roundNum = uiManager.Create<RoundNum>("RoundNum", "Prefabs/UI/Battle/RoundNum", false);
-            m_roundPlayer = uiManager.Create<RoundPlayer>("RoundPlayer", "Prefabs/UI/Battle/RoundPlayer", false);
+            m_abilityPanel = uiManager.Create<AbilityPanel>("AbilityPanel", "BattleUI", "AbilityPanel");
+            m_characterPanel = uiManager.Create<CharacterPanel>("CharacterPanel", "BattleUI", "CharacterPanel");
+            m_roundNum = uiManager.Create<RoundNum>("RoundNum", "BattleUI", "RoundNum", false);
+            m_roundPlayer = uiManager.Create<RoundPlayer>("RoundPlayer", "BattleUI", "RoundPlayer", false);
 
-            m_overheadUIPrefab = ResourceManager.Load<GameObject>("Prefabs/UI/Battle/Overhead");
+            m_overheadUIPrefab = ResourceManager.Load<GameObject>("BattleUI", "Overhead");
             Debug.Assert(m_overheadUIPrefab != null);
         }
 

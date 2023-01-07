@@ -24,8 +24,8 @@ namespace MySrpg.UI
         {
             base.OnCreate(uiMngr, args);
 
-            m_playerPage = uiManager.Create<PlayerPage>("PlayerPage", "Prefabs/UI/PlayerPage/PlayerPage");
-            m_taskPage = uiManager.Create<TaskPage>("TaskPage", "Prefabs/UI/TaskPage/TaskPage");
+            m_playerPage = uiManager.Create<PlayerPage>("PlayerPage", "MainPageUI", "PlayerPage");
+            m_taskPage = uiManager.Create<TaskPage>("TaskPage", "MainPageUI", "TaskPage");
 
             pveBtn.onClick.AddListener(OnPvEBtnClick);
             pvpBtn.onClick.AddListener(OnPvPBtnClick);

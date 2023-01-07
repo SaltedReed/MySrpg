@@ -11,6 +11,7 @@ namespace MySrpg
     {
         public int globalAffiliation { get; private set; }
 
+
         public override void OnStartClient()
         {
             Debug.Log("SrpgNetManager OnStartClient");

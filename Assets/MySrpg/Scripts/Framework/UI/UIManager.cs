@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using MyUtility;
+using System.IO;
 
 namespace MyFramework.UI
 {
@@ -82,7 +83,7 @@ namespace MyFramework.UI
             }
         }
 
-        public T Create<T>(string wid, string path, bool asChild = true, object args = null) where T : BaseUIWidget
+        public T Create<T>(string wid, string parentDic, string assetName, bool asChild = true, object args = null) where T : BaseUIWidget
         {
             BaseUIWidget widget;
             if (m_widgets.TryGetValue(wid, out widget))
@@ -93,9 +94,9 @@ namespace MyFramework.UI
                     m_widgets.Remove(wid);
             }
 
-            GameObject prefab = ResourceManager.Load<GameObject>(path);
+            GameObject prefab = ResourceManager.Load<GameObject>(parentDic, assetName);
             if (prefab is null)
-                throw new NullReferenceException($"failed to load from {path} for {wid}");
+                throw new NullReferenceException($"failed to load from {Path.Combine(parentDic, assetName)} for {wid}");
 
             GameObject go = Instantiate(prefab);
             if (asChild)

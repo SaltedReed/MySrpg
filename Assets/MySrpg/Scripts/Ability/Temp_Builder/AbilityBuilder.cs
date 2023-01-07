@@ -22,7 +22,7 @@ namespace MySrpg
 
         public AbilityBuilder Icon(string path)
         {
-            m_target.icon = ResourceManager.Load<Sprite>(path);
+            m_target.icon = ResourceManager.Load<Sprite>("Textures", path);
             if (m_target.icon is null)
                 Debug.LogWarning($"failed to load sprite from {path} for {m_target.abilityName}");
             return this;

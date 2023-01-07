@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1991997550
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: player_dog
+      Dependencies:
+        Dependency_0: player_erika
+    Info_1:
+      Name: player_erika
+      Dependencies:
+        Dependency_0: newbundle
+    Info_2:
+      Name: newbundle
+      Dependencies:
+        Dependency_0: player_erika

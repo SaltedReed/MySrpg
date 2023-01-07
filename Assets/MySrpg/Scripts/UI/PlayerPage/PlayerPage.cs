@@ -17,9 +17,9 @@ namespace MySrpg.UI
         {
             base.OnCreate(uiMngr, args);
 
-            characterList = uiMngr.Create<CharacterList>("CharacterList", @"Prefabs/UI/PlayerPage/CharacterList");
+            characterList = uiMngr.Create<CharacterList>("CharacterList", "MainPageUI", "CharacterList");
             characterList.transform.SetParent(transform);
-            characterDisplay = uiMngr.Create<CharacterDisplay>("CharacterDisplay", @"Prefabs/UI/PlayerPage/CharacterDisplay");
+            characterDisplay = uiMngr.Create<CharacterDisplay>("CharacterDisplay", "MainPageUI", "CharacterDisplay");
             characterDisplay.transform.SetParent(transform);
 
             closeBtn.onClick.AddListener(() =>

@@ -29,7 +29,7 @@ namespace MyTest
                 string wid = "character list";
                 if (!uiSys.Contains(wid))
                 {
-                    CharacterList panel = uiSys.Create<CharacterList>(wid, @"Prefabs/UI/PlayerPage/CharacterList");
+                    CharacterList panel = uiSys.Create<CharacterList>(wid, "MainPageUI", "CharacterList");
                 }
                 uiSys.Open(wid, new CharacterConfig[] { player });
             }
@@ -56,7 +56,7 @@ namespace MyTest
                 string wid = "PlayerPage";
                 if (!uiSys.Contains(wid))
                 {
-                    PlayerPage panel = uiSys.Create<PlayerPage>(wid, @"Prefabs/UI/PlayerPage/PlayerPage");
+                    PlayerPage panel = uiSys.Create<PlayerPage>(wid, "MainPageUI", "PlayerPage");
                 }
                 uiSys.Open(wid, new CharacterConfig[] { player });
             }
@@ -77,7 +77,7 @@ namespace MyTest
                 string wid = "MainPage";
                 if (!uiSys.Contains(wid))
                 {
-                    MainPage panel = uiSys.Create<MainPage>(wid, @"Prefabs/UI/MainPage");
+                    MainPage panel = uiSys.Create<MainPage>(wid, "MainPageUI", "MainPage");
                 }
                 uiSys.Push(wid, new CharacterConfig[] { player });
             }

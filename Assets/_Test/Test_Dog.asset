@@ -49,7 +49,7 @@ MonoBehaviour:
     maxX: 0
   attackmentRangeCell: 2
   attackmentFormula:
-    basicVal: 30
+    basicVal: 100
     perUnitVal: 0
     clampMin: 0
     minX: 0

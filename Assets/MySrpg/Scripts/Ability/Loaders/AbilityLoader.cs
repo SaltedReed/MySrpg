@@ -48,7 +48,7 @@ namespace MySrpg
         private static Ability LoadAbilityConfig(AbilityConfig c, AbilityExecutor executor, Character character)
         {
             Ability a = new Ability(c.abilityName, character, executor);
-            a.icon = ResourceManager.Load<Sprite>(c.iconPath);
+            a.icon = ResourceManager.Load<Sprite>("Textures", c.iconPath);
             a.timeLength = (float)c.timeLength;
             a.maxCooldown = c.cooldown;
             a.useOwnerRange = c.useOwnerRange;
@@ -162,7 +162,7 @@ namespace MySrpg
                 Buff_ModifyProperty realb = new Buff_ModifyProperty();
                 realb.name = realc.name;
                 if (!string.IsNullOrEmpty(realc.iconPath))
-                    realb.icon = ResourceManager.Load<Sprite>(realc.iconPath);
+                    realb.icon = ResourceManager.Load<Sprite>("Textures", realc.iconPath);
                 realb.maxDuration = realc.maxDuration;
                 realb.property = realc.property;
                 realb.valueToAdd = (float)realc.valueToAdd;

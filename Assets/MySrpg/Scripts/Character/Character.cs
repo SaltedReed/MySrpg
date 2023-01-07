@@ -559,6 +559,19 @@ namespace MySrpg
             m_abilities[index] = a;
         }
 
+        public void SpawnVfxForCurrentAbility(string path)
+        {
+            if (currentAbility is null || currentAbility.targets is null)
+                return;
+
+            GameObject prefab = ResourceManager.Load<GameObject>("Vfx", path); Debug.Assert(prefab != null);
+
+            foreach (Character c in currentAbility.targets)
+            {
+                Transform trans = c.transform;
+                VfxManager.SpawnParticle(prefab, prefab.transform.position, trans.localToWorldMatrix, Quaternion.identity);
+            }
+        }
 
         #endregion
 

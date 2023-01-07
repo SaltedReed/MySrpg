@@ -4,7 +4,6 @@ using MyUtility;
 namespace MySrpg
 {
 
-    //[RequireComponent(typeof(Collider), typeof(Rigidbody))]
     public class Projectile : MonoBehaviour
     {
         public AbilityEvent[] onHit { get; set; }

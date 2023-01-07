@@ -7,6 +7,11 @@ using Pathfinding;
 namespace MySrpg
 {
 
+    public struct Msg_Join : NetworkMessage
+    {
+
+    }
+
     public struct Msg_UseAbility : NetworkMessage
     {
         public int characterIndex;

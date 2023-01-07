@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 3270415611
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 33c2425023e2473e020bac7153133781
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ece8a08ba50bfd174152c136c2676b08
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4703dda8ddb7e6f4fbe7860fa09aecc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fd385e6703c505b4cafe1f0e4287e53b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 29893fb9a7e84f14d948d88328874d30, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/_Test/Player_Erika.prefab
+Dependencies:
+- E:/workspace-unity/MySrpg/MySrpg/AssetBundles/StandaloneWindows/newbundle

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MyFramework;
+using MyUtility;
 using UnityEngine.SceneManagement;
 
 namespace MySrpg
@@ -72,6 +73,7 @@ namespace MySrpg
 
         public void LoadScene(string scene)
         {
+            ResourceManager.Clear();
             SceneManager.LoadScene(loadingSceneName);
             StartCoroutine(LoadSceneCoroutine(scene));
         }

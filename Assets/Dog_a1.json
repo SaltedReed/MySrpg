@@ -1,6 +1,6 @@
 {
     "abilityName":"a1",
-    "iconPath":"Textures/Tx_Dog_a1",
+    "iconPath":"Tx_Dog_a1",
     "timeLength":0.833,
     "cooldown":2,
     "useOwnerRange":false,
@@ -18,7 +18,7 @@
             "__ASSEMBLY__":"Assembly-CSharp, Version=0.17.0.0, Culture=neutral, PublicKeyToken=null",
             "__TYPE__":"MySrpg.AbilityEventConfig_SpawnVfx",
             "timePoint":0.35,
-            "path":"Prefabs/Vfx/Vfx_Dog_A1"
+            "path":"Vfx_Dog_A1"
         },
         {
             "__ASSEMBLY__":"Assembly-CSharp, Version=0.17.0.0, Culture=neutral, PublicKeyToken=null",
@@ -36,7 +36,7 @@
                 "__ASSEMBLY__":"Assembly-CSharp, Version=0.17.0.0, Culture=neutral, PublicKeyToken=null",
                 "__TYPE__":"MySrpg.BuffConfig_ModifyProperty",
                 "name":"b1",
-                "iconPath":"Textures/Tx_b1",
+                "iconPath":"Tx_b1",
                 "maxDuration":1,
                 "property":2,
                 "valueToAdd":-5.0

@@ -45,9 +45,12 @@ namespace MySrpg
         public void SelectNextCharacter()
         {
             HideFriendInfo();
-            if (m_curSelectIndex < m_battleSys.count0 - 1)
+
+            m_curSelectIndex = GetNextSelectIndex(m_curSelectIndex);
+
+            if (m_curSelectIndex >= 0)
             {
-                selection = m_battleSys.characters0[++m_curSelectIndex];
+                selection = m_battleSys.characters0[m_curSelectIndex];
                 ShowFriendInfo(selection.mapNode, selection);
             }
             else
@@ -66,6 +69,20 @@ namespace MySrpg
 
                 lvlManager.StartNextHalfRound();
             }
+        }
+
+        private int GetNextSelectIndex(int curIndex)
+        {
+            List<Character> potentials = m_battleSys.aliveCharacters0;
+            for (int i = 0; i < potentials.Count; ++i)
+            {
+                if (potentials[i].index > curIndex)
+                {
+                    return potentials[i].index;
+                }
+            }
+
+            return -1;
         }
 
         private void OnCharacterFinishAbility(Character c, Ability a)

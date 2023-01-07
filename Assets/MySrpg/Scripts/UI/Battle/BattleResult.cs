@@ -38,7 +38,7 @@ namespace MySrpg.UI
         {
             uiManager.Close(this);
 
-            BattleTrophyResult ui = uiManager.Create<BattleTrophyResult>("BattleTrophyResult", "Prefabs/UI/Battle/BattleTrophyResult", false);
+            BattleTrophyResult ui = uiManager.Create<BattleTrophyResult>("BattleTrophyResult", "BattleUI", "BattleTrophyResult", false);
             uiManager.Open(ui);
         }
     }

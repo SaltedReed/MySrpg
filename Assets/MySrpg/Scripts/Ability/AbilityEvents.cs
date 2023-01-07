@@ -34,7 +34,7 @@ namespace MySrpg
         {
             //Debug.Log($"executing AbilityEvent_SpawnVfx");
 
-            GameObject prefab = ResourceManager.Load<GameObject>(path); Debug.Assert(prefab!=null);
+            GameObject prefab = ResourceManager.Load<GameObject>("Vfx", path); Debug.Assert(prefab!=null);
 
             Transform trans;
             if (onTarget)
@@ -144,7 +144,7 @@ namespace MySrpg
         {
             //Debug.Log($"executing AbilityEvent_SpawnProjectile");
 
-            GameObject prefab = ResourceManager.Load<GameObject>(path);
+            GameObject prefab = ResourceManager.Load<GameObject>("Projectiles", path);
 
             GameObject go = GameObject.Instantiate(prefab);
 
